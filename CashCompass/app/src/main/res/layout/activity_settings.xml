@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_background"
+    android:padding="24dp"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="24dp"/>
+
+        <!-- Currency Section -->
+        <TextView
+            android:id="@+id/textViewCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Currency"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:paddingBottom="6dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/spinnerCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search and Select Currency"
+            android:background="@drawable/input_field"
+            android:padding="12dp"
+            android:inputType="text"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Monthly Budget -->
+        <TextView
+            android:id="@+id/textViewMonthlyBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Monthly Budget"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:paddingBottom="6dp" />
+
+        <EditText
+            android:id="@+id/editTextMonthlyBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount (R)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/input_field"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Minimum Monthly Spend Goal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Minimum Monthly Spending Goal"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/editTextMinGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter minimum amount"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/input_field"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white" />
+
+
+        <!-- Notifications Toggle -->
+        <TextView
+            android:id="@+id/textViewNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Notifications"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:paddingBottom="6dp" />
+
+        <Switch
+            android:id="@+id/switchNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turn on/off"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Change Password Section -->
+        <TextView
+            android:id="@+id/textViewChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:paddingBottom="6dp" />
+
+        <EditText
+            android:id="@+id/editTextOldPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/input_field"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/editTextNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/input_field"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Save Settings -->
+        <Button
+            android:id="@+id/buttonSaveSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Save Settings"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Logout -->
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Back -->
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Back"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+</ScrollView>

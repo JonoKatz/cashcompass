@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addExpenseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    android:fillViewport="true"
+    tools:context=".ExpenseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewAddExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="24dp" />
+
+        <!-- Amount -->
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount (R)"
+            android:inputType="numberDecimal"
+            android:background="@drawable/input_field"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Date -->
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date (DD/MM/YYYY)"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/input_field"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Category -->
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_field"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description (optional)"
+            android:background="@drawable/input_field"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Attach Receipt -->
+        <Button
+            android:id="@+id/buttonAttachReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attach Receipt (Optional)"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/buttonSaveExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Expense"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button" />
+    </LinearLayout>
+</ScrollView>

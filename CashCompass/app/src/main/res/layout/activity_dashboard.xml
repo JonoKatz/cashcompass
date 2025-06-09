@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/textViewDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp" />
+
+        <!-- Budget Overview Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/textViewBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budget: R10,000"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remaining: R4,500"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewMinGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimum Spend Goal: R0.00"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="4dp" />
+
+
+        <!-- Recent Transactions -->
+        <TextView
+            android:id="@+id/textViewRecentTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recent Transactions"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <ListView
+            android:id="@+id/listViewTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:dividerHeight="1dp"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Add Expense -->
+        <Button
+            android:id="@+id/buttonAddExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Savings Progress -->
+        <TextView
+            android:id="@+id/textViewSavingsGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Savings Goal Progress"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSavings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="60"
+            android:progressDrawable="@drawable/progress_bar_custom"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Navigation Grid -->
+        <GridLayout
+            android:id="@+id/navigationGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:padding="12dp"
+            android:background="@drawable/card_background"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/buttonExpenses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Expenses"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/buttonReports"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Reports"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/buttonSettings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Settings"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/buttonAchievements"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Achievements"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@android:color/white" />
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "178687715718",
+    "project_id": "cashcompass-e7d0c",
+    "storage_bucket": "cashcompass-e7d0c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178687715718:android:71fb927e9e9fde89102407",
+        "android_client_info": {
+          "package_name": "com.example.cashcompass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiz7OwCwJIlhD0MU2eE410-6x5EHAlxuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

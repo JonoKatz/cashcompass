@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cashcompass">
+
+    <application
+        android:allowBackup="true"
+        android:label="CashCompass"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CashCompass">
+
+        <!-- Main Launcher Activity -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Auth Activities -->
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+
+        <!-- Core App Activities -->
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".ExpenseActivity" />
+        <activity android:name=".ExpenseListActivity" />
+        <activity android:name=".ReportsActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".AchievementsActivity" />
+
+    </application>
+
+</manifest>

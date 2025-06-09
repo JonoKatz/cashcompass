@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textViewAddExpense" type="id" />
+    <item name="editTextAmount" type="id" />
+    <item name="editTextDate" type="id" />
+    <item name="spinnerCategory" type="id" />
+    <item name="editTextDescription" type="id" />
+    <item name="buttonAttachReceipt" type="id" />
+    <item name="buttonSaveExpense" type="id" />
+    <item name="buttonCancel" type="id" />
+    <item name="buttonSendResetLink" type="id" />
+    <item name="buttonBackToLogin" type="id" />
+</resources>
